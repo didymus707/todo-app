@@ -5,8 +5,8 @@ import { TodayIcon, Overdue, Task, Add } from "./primitives/icons";
 export const Sidebar = () => {
   return (
     <>
-      <div className="bg-white w-1/5 px-4 py-4 border-r-2 border-r-[#e2e2e2] min-h-[calc(100vh-3.2rem)]">
-        <div className="flex flex-col">
+      <div className="flex flex-col w-1/5 border-r-2 border-r-[#e2e2e2]">
+        <div className="bg-white px-4 pt-4 min-h-[calc(100vh-5.6rem)]">
           <div className="flex flex-col">
             <SidebarItem
               qty={0}
@@ -87,13 +87,13 @@ export const Sidebar = () => {
               icon={<Task size="1.4em" classNames={["mr-4"]} />}
             />
           </div>
-          <SidebarItem
-            qty={0}
-            time="0m"
-            title="Add Project"
-            icon={<Add size="1.4em" classNames={["mr-4"]} />}
-          />
         </div>
+        <SidebarItem
+          qty={0}
+          time="0m"
+          title="Add Project"
+          icon={<Add size="1.4em" classNames={["mr-4"]} />}
+        />
       </div>
     </>
   );

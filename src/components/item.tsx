@@ -15,7 +15,7 @@ export const SidebarItem = (props: SidebarItemProps) => {
     <div
       className={`flex items-center p-2 justify-between cursor-pointer hover:bg-gray-100 rounded-md ${
         title === "Add Project" &&
-        "my-auto hover:bg-transparent border-t border-[#e2e2e2] rounded-none last-of-type:my-auto"
+        "my-auto hover:bg-transparent border-t border-[#e2e2e2] rounded-none last-of-type:mt-auto"
       }`}
     >
       <div className="flex items-center w-[70%]">
@@ -33,7 +33,7 @@ export const SidebarItem = (props: SidebarItemProps) => {
       {title === "Add Project" && (
         <div className="flex ">
           {<Tag classNames={["mr-4"]} size="1.4em" />}
-          {<Folder classNames={["mr-[-6px]"]} size="1.4em" />}
+          {<Folder classNames={["mr-2"]} size="1.4em" />}
         </div>
       )}
     </div>
