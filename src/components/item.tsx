@@ -15,7 +15,7 @@ export const SidebarItem = (props: SidebarItemProps) => {
     <div
       className={`flex items-center p-2 justify-between cursor-pointer hover:bg-gray-100 rounded-md ${
         title === "Add Project" &&
-        "my-auto hover:bg-transparent border-t border-[#e2e2e2] rounded-none last-of-type:mt-auto"
+        "pl-6 hover:bg-transparent border-t border-[#e2e2e2] rounded-none"
       }`}
     >
       <div className="flex items-center w-[70%]">

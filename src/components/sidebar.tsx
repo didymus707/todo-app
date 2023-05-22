@@ -1,6 +1,6 @@
 import React from "react";
 import { SidebarItem } from "./item";
-import { TodayIcon, Overdue, Task, Add } from "./primitives/icons";
+import { TodayIcon, Overdue, Task, Add, Completed, Planned, ThisWeek, NextWeek, HighPriority, MidPriority, LowPriority, Tomorrow, All, Someday } from "./primitives/icons";
 
 export const Sidebar = () => {
   return (
@@ -24,61 +24,61 @@ export const Sidebar = () => {
               qty={0}
               time="0m"
               title="Tomorrow"
-              icon={<Overdue size="1.4em" classNames={["mr-4"]} />}
+              icon={<Tomorrow size="1.4em" classNames={["mr-4"]} />}
             />
             <SidebarItem
               qty={0}
               time="0m"
               title="This Week"
-              icon={<Overdue size="1.4em" classNames={["mr-4"]} />}
+              icon={<ThisWeek size="1.4em" classNames={["mr-4"]} />}
             />
             <SidebarItem
               qty={0}
               time="0m"
-              title="Next 7 Days"
-              icon={<Overdue size="1.4em" classNames={["mr-4"]} />}
+              title="Next Week"
+              icon={<NextWeek size="1.4em" classNames={["mr-4"]} />}
             />
             <SidebarItem
               qty={0}
               time="0m"
               title="High Priority"
-              icon={<Overdue size="1.4em" classNames={["mr-4"]} />}
+              icon={<HighPriority size="1.4em" classNames={["mr-4"]} />}
             />
             <SidebarItem
               qty={0}
               time="0m"
               title="Medium Priority"
-              icon={<Overdue size="1.4em" classNames={["mr-4"]} />}
+              icon={<MidPriority size="1.4em" classNames={["mr-4"]} />}
             />
             <SidebarItem
               qty={0}
               time="0m"
               title="Low Priority"
-              icon={<Overdue size="1.4em" classNames={["mr-4"]} />}
+              icon={<LowPriority size="1.4em" classNames={["mr-4"]} />}
             />
             <SidebarItem
               qty={0}
               time="0m"
               title="Planned"
-              icon={<Overdue size="1.4em" classNames={["mr-4"]} />}
+              icon={<Planned size="1.4em" classNames={["mr-4"]} />}
             />
             <SidebarItem
               qty={0}
               time="0m"
               title="All"
-              icon={<Overdue size="1.4em" classNames={["mr-4"]} />}
+              icon={<All size="1.4em" classNames={["mr-4"]} />}
             />
             <SidebarItem
               qty={0}
               time="0m"
               title="Someday"
-              icon={<Overdue size="1.4em" classNames={["mr-4"]} />}
+              icon={<Someday size="1.4em" classNames={["mr-4"]} />}
             />
             <SidebarItem
               qty={0}
               time="0m"
               title="Completed"
-              icon={<Overdue size="1.4em" classNames={["mr-4"]} />}
+              icon={<Completed size="1.4em" classNames={["mr-4"]} />}
             />
             <SidebarItem
               qty={0}
