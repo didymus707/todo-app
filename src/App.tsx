@@ -5,7 +5,7 @@ import { Sidebar } from "./components/sidebar";
 
 function App() {
   return (
-    <div>
+    <div className="min-h-screen">
       <Header />
       <Sidebar />
     </div>

@@ -150,7 +150,7 @@ export const Add = (props: IconProps) => {
   );
 };
 
-export const Tags = (props: IconProps) => {
+export const Tag = (props: IconProps) => {
   const { classNames, size } = props;
 
   return (
