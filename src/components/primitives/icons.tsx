@@ -2,7 +2,7 @@ import React from "react";
 import { BsSun, BsWindowStack, BsCalendar2Week, BsSunrise } from "react-icons/bs";
 import {
   MdOutlineAdd,
-  MdNavigateNext,
+  // MdNavigateNext,
   MdOutlineAddTask,
   MdOutlineNextPlan,
   MdOutlineWatchLater,
@@ -148,7 +148,7 @@ export const Task = (props: IconProps) => {
 
 export const Add = (props: IconProps) => {
   const { classNames, size } = props;
-  
+
   return (
     <div className={classNames.join(" ")}>
       <MdOutlineAdd size={size} color="#37c559" />
