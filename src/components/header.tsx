@@ -1,6 +1,7 @@
 import React from "react";
 import { RxAvatar } from "react-icons/rx";
 import { Analytics, Notification, Premium, Settings } from "./primitives/icons";
+import Tooltip from "./primitives/tooltip";
 
 
 export const Header = (props: any) => {
@@ -17,18 +18,18 @@ export const Header = (props: any) => {
           </div>
         </div>
         <div className="flex ml-auto w-[10%] justify-between items-center">
-          <div>
+          <Tooltip description="Premium">
             <Premium classNames={["cursor-pointer"]} size="1.4em" />
-          </div>
-          <div>
+          </Tooltip>
+          <Tooltip description="Report">
             <Analytics classNames={["cursor-pointer"]} size="1.6em" />
-          </div>
-          <div>
+          </Tooltip>
+          <Tooltip description="Notification">
             <Notification classNames={["cursor-pointer"]} size="1.6em" />
-          </div>
-          <div>
+          </Tooltip>
+          <Tooltip description="Settings">
             <Settings classNames={["cursor-pointer"]} size="1.6em" />
-          </div>
+          </Tooltip>
         </div>
       </div>
     </div>
