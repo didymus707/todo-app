@@ -1,18 +1,31 @@
 import React from "react";
-import { BsSun, BsWindowStack, BsCalendar2Week, BsSunrise } from "react-icons/bs";
+import {
+  BsSun,
+  BsWindowStack,
+  BsCalendar2Week,
+  BsSunrise,
+} from "react-icons/bs";
 import {
   MdOutlineAdd,
   // MdNavigateNext,
   MdOutlineAddTask,
   MdOutlineNextPlan,
+  MdOutlineSettings,
   MdOutlineWatchLater,
-  MdOutlineAutoAwesomeMosaic
+  MdOutlineAutoAwesomeMosaic,
+  MdOutlineNotificationsActive,
 } from "react-icons/md";
 import { TiThSmallOutline } from "react-icons/ti";
 import { AiOutlineTags } from "react-icons/ai";
 import { GiClosedDoors } from "react-icons/gi";
 import { HiOutlineFolderOpen } from "react-icons/hi";
-import { FcHighPriority, FcLowPriority, FcMediumPriority, FcPaid } from "react-icons/fc";
+import { IoAnalyticsOutline } from "react-icons/io5";
+import {
+  FcHighPriority,
+  FcLowPriority,
+  FcMediumPriority,
+  FcPaid,
+} from "react-icons/fc";
 
 type IconProps = {
   classNames: string[];
@@ -177,11 +190,41 @@ export const Folder = (props: IconProps) => {
 };
 
 export const Premium = (props: IconProps) => {
-  const {classNames, size} = props;
+  const { classNames, size } = props;
 
   return (
     <div className={classNames.join(" ")}>
-      <FcPaid size={size} color="#37c559" />
+      <FcPaid size={size} color="#e11d48" />
     </div>
-  )
-}
+  );
+};
+
+export const Analytics = (props: IconProps) => {
+  const { classNames, size } = props;
+
+  return (
+    <div className={classNames.join(" ")}>
+      <IoAnalyticsOutline size={size} color="#78716c" />
+    </div>
+  );
+};
+
+export const Notification = (props: IconProps) => {
+  const { classNames, size } = props;
+
+  return (
+    <div className={classNames.join(" ")}>
+      <MdOutlineNotificationsActive size={size} color="#78716c" />
+    </div>
+  );
+};
+
+export const Settings = (props: IconProps) => {
+  const { classNames, size } = props;
+
+  return (
+    <div className={classNames.join(" ")}>
+      <MdOutlineSettings size={size} color="#78716c" />
+    </div>
+  );
+};
