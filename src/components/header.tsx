@@ -18,16 +18,16 @@ export const Header = (props: any) => {
           </div>
         </div>
         <div className="flex ml-auto w-[10%] justify-between items-center">
-          <Tooltip description="Premium">
+          <Tooltip description="Premium" position="top-8">
             <Premium classNames={["cursor-pointer"]} size="1.4em" />
           </Tooltip>
-          <Tooltip description="Report">
+          <Tooltip description="Report" position="top-8">
             <Analytics classNames={["cursor-pointer"]} size="1.6em" />
           </Tooltip>
-          <Tooltip description="Notification">
+          <Tooltip description="Notifications" position="top-8">
             <Notification classNames={["cursor-pointer"]} size="1.6em" />
           </Tooltip>
-          <Tooltip description="Settings">
+          <Tooltip description="Settings" position="top-8">
             <Settings classNames={["cursor-pointer"]} size="1.6em" />
           </Tooltip>
         </div>

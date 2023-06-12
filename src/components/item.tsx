@@ -1,5 +1,6 @@
 import React from "react";
 import { Folder, Tag } from "./primitives/icons";
+import Tooltip from "./primitives/tooltip";
 
 type SidebarItemProps = {
   title: string;
@@ -32,8 +33,14 @@ export const SidebarItem = (props: SidebarItemProps) => {
 
       {title === "Add Project" && (
         <div className="flex ">
-          {<Tag classNames={["mr-4"]} size="1.4em" />}
-          {<Folder classNames={["mr-2"]} size="1.4em" />}
+          <>
+            <Tooltip description="tags" position="bottom-8" positionH='mx-[-8px]'>
+              <Tag classNames={["mr-4"]} size="1.4em" />
+            </Tooltip>
+            <Tooltip description="folder" position="bottom-8">
+              <Folder classNames={["mr-2"]} size="1.4em" />
+            </Tooltip>
+          </>
         </div>
       )}
     </div>
