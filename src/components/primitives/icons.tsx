@@ -30,6 +30,7 @@ import {
 type IconProps = {
   classNames: string[];
   size: string;
+  onClick?: () => void;
 };
 
 export const TodayIcon = (props: IconProps) => {

@@ -17,7 +17,7 @@ export const Header = (props: any) => {
             {token ? user?.email : "Sign In | Sign Up"}
           </div>
         </div>
-        <div className="flex ml-auto w-[10%] justify-between items-center">
+        <div className="flex ml-auto w-[12%] justify-between items-center">
           <Tooltip description="Premium" position="top-8">
             <Premium classNames={["cursor-pointer"]} size="1.4em" />
           </Tooltip>
