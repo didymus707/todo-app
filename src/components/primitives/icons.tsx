@@ -195,7 +195,7 @@ export const Premium = (props: IconProps) => {
 
   return (
     <div className={classNames.join(" ")}>
-      <MdWorkspacePremium size={size} color="#22c55e" />
+      <MdWorkspacePremium size={size} color="rgb(5 150 105)" />
     </div>
   );
 };

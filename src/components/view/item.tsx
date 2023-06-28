@@ -10,11 +10,11 @@ export const InfoItem = ({ label, count }: InfoItemProps) => {
     <div className="flex flex-col my-3 items-center">
       <p className="font-sil text-4xl text-red-500">
         {count}
-        <span className="font-sans text-sm text-gray-400 ml-px">
+        <span className="font-sans text-sm text-slate-400 ml-px">
           {label.includes("Time") && "m"}
         </span>
       </p>
-      <p className="text-xs text-gray-400 mt-px">{label}</p>
+      <p className="text-xs text-slate-400 mt-px">{label}</p>
     </div>
   );
 };
