@@ -8,7 +8,7 @@ export const Header = (props: any) => {
   const { token, user } = props;
   return (
     <div className="w-full px-6 py-2 border-b-2">
-      <div className="flex w-full text-red-500">
+      <div className="flex w-full text-blue-500">
         <div className="avatar-auth flex items-center w-40 justify-between">
           <div className="avatar">
             <RxAvatar size="2em" />

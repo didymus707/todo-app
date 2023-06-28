@@ -175,7 +175,7 @@ export const Tag = (props: IconProps) => {
 
   return (
     <div className={classNames.join(" ")}>
-      <AiOutlineTags size={size} color="#22c55e" />
+      <AiOutlineTags size={size} color="rgb(96 165 250)" />
     </div>
   );
 };
@@ -185,7 +185,7 @@ export const Folder = (props: IconProps) => {
 
   return (
     <div className={classNames.join(" ")}>
-      <HiOutlineFolderOpen size={size} color="#22c55e" />
+      <HiOutlineFolderOpen size={size} color="rgb(96 165 250)" />
     </div>
   );
 };
@@ -195,7 +195,7 @@ export const Premium = (props: IconProps) => {
 
   return (
     <div className={classNames.join(" ")}>
-      <MdWorkspacePremium size={size} color="rgb(5 150 105)" />
+      <MdWorkspacePremium size={size} color="rgb(96 165 250)" />
     </div>
   );
 };
@@ -235,7 +235,7 @@ export const SortIcon = (props: IconProps) => {
 
   return (
     <div className={classNames.join(" ")}>
-      <RxCaretSort color="#ef4444" size={size} />
+      <RxCaretSort color="rgb(96 165 250)" size={size} />
     </div>
   );
 };
