@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 type SidebarItemProps = {
   title: string;
   icon: React.ReactNode;
@@ -11,8 +13,8 @@ export const SidebarItem = (props: SidebarItemProps) => {
 
   return (
     <>
-      <a
-        href={`/${title}`}
+      <Link
+        to={`/${title}`}
         className="flex items-center p-2 justify-between cursor-pointer hover:bg-gray-100 rounded-md"
       >
         <div className="flex items-center w-[70%]">
@@ -26,7 +28,7 @@ export const SidebarItem = (props: SidebarItemProps) => {
             <span>{qty}</span>
           </div>
         )}
-      </a>
+      </Link>
     </>
   );
 };

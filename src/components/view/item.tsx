@@ -7,14 +7,14 @@ type InfoItemProps = {
 
 export const InfoItem = ({ label, count }: InfoItemProps) => {
   return (
-    <div className="flex flex-col my-4 items-center">
-      <p className="text-base">
+    <div className="flex flex-col my-3 items-center">
+      <p className="font-sil text-4xl text-red-500">
         {count}
-        <span className="text-sm text-gray-400 mt-2">
+        <span className="font-sans text-sm text-gray-400 ml-px">
           {label.includes("Time") && "m"}
         </span>
       </p>
-      <p className="text-base">{label}</p>
+      <p className="text-xs text-gray-400 mt-px">{label}</p>
     </div>
   );
 };

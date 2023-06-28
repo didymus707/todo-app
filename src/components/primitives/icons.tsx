@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react";
 import {
   BsSun,
@@ -6,8 +7,8 @@ import {
   BsSunrise,
 } from "react-icons/bs";
 import {
-  MdOutlineAdd,
   // MdNavigateNext,
+  MdWorkspacePremium,
   MdOutlineAddTask,
   MdOutlineNextPlan,
   MdOutlineSettings,
@@ -24,13 +25,13 @@ import {
   FcHighPriority,
   FcLowPriority,
   FcMediumPriority,
-  FcPaid,
 } from "react-icons/fc";
+import { RxCaretSort, RxPlus } from "react-icons/rx";
 
 type IconProps = {
-  classNames: string[];
   size: string;
   onClick?: () => void;
+  classNames: string[];
 };
 
 export const TodayIcon = (props: IconProps) => {
@@ -117,7 +118,6 @@ export const Planned = (props: IconProps) => {
 
   return (
     <div className={classNames.join(" ")}>
-      {/* <BsWindowStack size={size} color="#37c559" /> */}
       <BsWindowStack size={size} color="#3b82f6" />
     </div>
   );
@@ -165,7 +165,7 @@ export const Add = (props: IconProps) => {
 
   return (
     <div className={classNames.join(" ")}>
-      <MdOutlineAdd size={size} color="#37c559" />
+      <RxPlus size={size} color="#c0c0c0" />
     </div>
   );
 };
@@ -175,7 +175,7 @@ export const Tag = (props: IconProps) => {
 
   return (
     <div className={classNames.join(" ")}>
-      <AiOutlineTags size={size} color="#37c559" />
+      <AiOutlineTags size={size} color="#22c55e" />
     </div>
   );
 };
@@ -185,7 +185,7 @@ export const Folder = (props: IconProps) => {
 
   return (
     <div className={classNames.join(" ")}>
-      <HiOutlineFolderOpen size={size} color="#37c559" />
+      <HiOutlineFolderOpen size={size} color="#22c55e" />
     </div>
   );
 };
@@ -195,7 +195,7 @@ export const Premium = (props: IconProps) => {
 
   return (
     <div className={classNames.join(" ")}>
-      <FcPaid size={size} color="#e11d48" />
+      <MdWorkspacePremium size={size} color="#22c55e" />
     </div>
   );
 };
@@ -226,6 +226,16 @@ export const Settings = (props: IconProps) => {
   return (
     <div className={classNames.join(" ")}>
       <MdOutlineSettings size={size} color="#78716c" />
+    </div>
+  );
+};
+
+export const SortIcon = (props: IconProps) => {
+  const { classNames, size } = props;
+
+  return (
+    <div className={classNames.join(" ")}>
+      <RxCaretSort color="#ef4444" size={size} />
     </div>
   );
 };

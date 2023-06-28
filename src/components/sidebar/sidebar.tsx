@@ -23,7 +23,7 @@ import Tooltip from "../primitives/tooltip";
 export const Sidebar = () => {
   return (
     <>
-      <div className="flex flex-col w-[19%] border-r-2 border-r-[#e2e2e2]">
+      <div className="flex flex-col w-[19%] drop-shadow-sm">
         <div className="bg-white px-4 pt-4 min-h-[calc(100vh-5.6rem)]">
           <div className="flex flex-col">
             <SidebarItem
@@ -107,20 +107,19 @@ export const Sidebar = () => {
           </div>
         </div>
         <div
-          className={`flex items-center p-2 justify-between cursor-pointer hover:bg-gray-100 rounded-md "pl-5 hover:bg-transparent border-t border-[#e2e2e2] rounded-none"`}
+          className="flex items-center p-2 justify-between cursor-pointer bg-white hover:bg-gray-100 pl-5 hover:bg-transparent border-t drop-shadow-sm rounded-none"
         >
           <div className="flex items-center w-[70%]" onClick={() => {}}>
             <Add size="1.4em" classNames={["mr-4"]} />
             <p className="text-sm text-gray-500">Add project</p>
           </div>
 
-          <div className="flex ">
+          <div className="flex">
             <>
               <Tooltip
                 description="tags"
                 position="bottom-8"
                 positionH="mx-[-8px]"
-                
               >
                 <Tag classNames={["mr-4"]} size="1.4em" />
               </Tooltip>
