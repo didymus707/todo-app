@@ -8,7 +8,7 @@ type FormProps = {
 
 export const TaskInput = ({ value, onchange }: FormProps) => {
   return (
-    <div className="w-full mt-4 relative flex items-center">
+    <div className="w-full relative flex items-center">
       <div className="icon absolute top-[17px] left-3">
         <Add size="1.4em" classNames={["mr-4"]} />
       </div>
