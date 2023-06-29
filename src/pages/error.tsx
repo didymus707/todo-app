@@ -5,10 +5,16 @@ export const ErrorPage = () => {
   const error: any = useRouteError();
 
   return (
-    <div>
+    <div className=" flex flex-col w-full text-center leading-normal h-screen justify-center">
       <h1>Oops! Sorry</h1>
       <p>
-        this doesn't happen, report to fire lord Osai, that we want to leave!
+        ruler: Hi there!
+        <br />
+        to minions: Y'all, they can see us! Come say hi, real quick!
+        <br />
+        minions: hiya!, hi!, hello!
+        <br />
+        Report this to Fire Lord Osai ti fix this if you don't wanna see us
       </p>
       <p>
         <i>{error.statusText || error.message}</i>

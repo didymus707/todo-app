@@ -1,7 +1,12 @@
 import React from "react";
 import { Add } from "./primitives/icons";
 
-export const Form = () => {
+type FormProps = {
+  value: string;
+  onchange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+};
+
+export const TaskInput = ({ value, onchange }: FormProps) => {
   return (
     <div className="w-full mt-4 relative flex items-center">
       <div className="icon absolute top-[17px] left-3">
@@ -9,8 +14,10 @@ export const Form = () => {
       </div>
       <input
         type="text"
+        onChange={onchange}
+        value={value}
         placeholder="Add a task then press enter to save"
-        className="form-input rounded-lg w-full border-none py-4 pl-12 placeholder:text-slate-400 placeholder:text-sm"
+        className="form-input rounded-lg w-full border-none py-4 pl-12 placeholder:text-slate-400 placeholder:text-sm text-slate-400"
       />
     </div>
   );
