@@ -6,7 +6,6 @@ import { useParams } from "react-router-dom";
 
 export const Today = () => {
   const { page } = useParams();
-  console.log("page", page);
   const [task, setTask] = useState("");
 
   const handletask = (e: React.ChangeEvent<HTMLInputElement>) =>
