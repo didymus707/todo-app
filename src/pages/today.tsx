@@ -3,7 +3,6 @@ import { Info } from "../components/view/info";
 import { TaskInput } from "../components/task-input";
 import { SortIcon } from "../components/primitives/icons";
 import { useParams } from "react-router-dom";
-// import Home from 'dowell-subscribe-newsletter'
 
 export const Today = () => {
   const { page } = useParams();
@@ -20,7 +19,6 @@ export const Today = () => {
       </div>
       {page !== "Completed" && <Info page={page} />}
       <TaskInput value={task} onchange={handletask} />
-      <Home />
     </div>
   );
 };
