@@ -10,11 +10,11 @@ export const ErrorPage = () => {
       <p>
         ruler: Hi there!
         <br />
-        to minions: Y'all, they can see us! Come say hi, real quick!
+        to minions: maka vay'all, vuga buga mekecee us! toma voga heloo!
         <br />
         minions: hiya!, hi!, hello!
         <br />
-        Report this to Fire Lord Osai ti fix this if you don't wanna see us
+        Report this to the Avatar to fix this if you don't wanna see us
       </p>
       <p>
         <i>{error.statusText || error.message}</i>
