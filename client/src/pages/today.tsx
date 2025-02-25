@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Info } from "../components/view/info";
 import { TaskInput } from "../components/task-input";
 import { SortIcon } from "../components/primitives/icons";
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router";
 
 export const Today = () => {
   const { page } = useParams();

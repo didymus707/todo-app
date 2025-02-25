@@ -1,4 +1,3 @@
-import React from "react";
 import { SidebarItem } from "./item";
 import {
   TodayIcon,
@@ -23,7 +22,7 @@ import Tooltip from "../primitives/tooltip";
 export const Sidebar = () => {
   return (
     <>
-      <div className="flex flex-col w-[19%] drop-shadow-sm">
+      <div className="flex flex-col w-[16%] drop-shadow-sm">
         <div className="bg-white px-4 pt-4 min-h-[calc(100vh-5.6rem)]">
           <div className="flex flex-col">
             <SidebarItem
@@ -106,9 +105,7 @@ export const Sidebar = () => {
             />
           </div>
         </div>
-        <div
-          className="flex items-center p-2 justify-between cursor-pointer bg-white hover:bg-gray-100 pl-5 hover:bg-transparent border-t drop-shadow-sm rounded-none"
-        >
+        <div className="flex items-center p-2 justify-between cursor-pointer bg-white hover:bg-gray-100 pl-5 hover:bg-transparent border-t drop-shadow-sm rounded-none">
           <div className="flex items-center w-[70%]" onClick={() => {}}>
             <Add size="1.4em" classNames={["mr-4"]} />
             <p className="text-sm text-gray-500">Add project</p>

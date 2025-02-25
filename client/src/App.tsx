@@ -1,8 +1,7 @@
-import React from "react";
 import "./App.css";
 import { Header } from "./components/header";
 import { Sidebar } from "./components/sidebar/sidebar";
-import { Outlet } from "react-router-dom";
+import { Outlet } from "react-router";
 
 function App() {
   return (
